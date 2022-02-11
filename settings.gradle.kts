@@ -1,2 +1,2 @@
 rootProject.name = "decryptginga"
-include ':decryptginga'
+include(":decryptginga")
