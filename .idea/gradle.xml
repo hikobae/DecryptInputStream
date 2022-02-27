@@ -10,7 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/decryptginga" />
+            <option value="$PROJECT_DIR$/decryptinputstream" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

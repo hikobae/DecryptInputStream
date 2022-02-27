@@ -31,6 +31,20 @@ android {
     }
 }
 
+fun gzip(intput: File, output: File) {
+    val bos = ByteArrayOutputStream(FileInputStream(input))
+    GZIPOutputStream(bos).bufferedWriter(UTF_8).use { it.write(content) }
+    return bos.toByteArray()
+}
+
+tasks.register("myTask") {
+    doFirst {
+        val input = File(projectDir, "src/main/font/font")
+        val output = File(projectDir, "src/main/font/font.gz")
+        println("myTask")
+    }
+}
+
 dependencies {
 
     testImplementation("junit:junit:4.13.2")
